@@ -8,7 +8,7 @@ BUFFER_SIZE = 1024
 def main():
     
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.setsockopt(socket.SOL_SOCKET, socket.SOL_REUSE
+        #s.setsockopt(socket.SOL_SOCKET, socket.SOL_REUSE)
         s.bind((HOST, PORT))
         s.listen(1)
 
